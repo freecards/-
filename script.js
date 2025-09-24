@@ -1,38 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Select all gift card elements on the page
+    // Select all gift card elements and the hero button
     const giftCards = document.querySelectorAll('.card');
-    
-    // Select the locker's overlay element
-    const lockerOverlay = document.getElementById('locker-overlay');
+    const heroBtn = document.querySelector('.call-to-action-btn');
 
-    // This is where you will place the script from OGAds
-    // Make sure to paste your exact code here between the backticks ``
-    const ogadsLockerScript = `
-        <script type="text/javascript" id="ogjs" src="https://lockedapp.org/cl/js/7j7kl9"></script>
-    `;
-    
-    // Function to show the locker pop-up
-    function showLocker() {
-        // Make the locker visible
-        lockerOverlay.style.display = 'flex';
-        
-        // This injects your OGAds script into the page so it can run
-        const lockerCodeContainer = document.getElementById('ogads-locker-code');
-        if (lockerCodeContainer) {
-            lockerCodeContainer.innerHTML = ogadsLockerScript;
+    // This is the URL you want to redirect the user to
+    const redirectURL = "https://lockedapp.org/cl/js/7j7kl9"; 
 
-            // This part helps load the script correctly after the page has loaded
-            const scriptTags = lockerCodeContainer.querySelectorAll('script');
-            scriptTags.forEach(tag => {
-                const newScript = document.createElement('script');
-                if (tag.src) {
-                    newScript.src = tag.src; // For external scripts
-                } else {
-                    newScript.innerHTML = tag.innerHTML; // For inline scripts
-                }
-                document.body.appendChild(newScript);
-            });
-        }
+    // Function to redirect the user
+    function redirectToWebsite() {
+        // Redirects the user's browser to the specified URL
+        window.location.href = redirectURL;
     }
 
     // Add a 'click' event listener to every gift card
@@ -41,17 +18,16 @@ document.addEventListener('DOMContentLoaded', function() {
             // Prevent the default browser action
             event.preventDefault();
             
-            // Call the function to show the locker
-            showLocker();
+            // Redirect the user to the new website
+            redirectToWebsite();
         });
     });
 
-    // Event listener for the "GET YOURS NOW" button in the hero section
-    const heroBtn = document.querySelector('.call-to-action-btn');
+    // Add a 'click' event listener to the hero button
     if (heroBtn) {
         heroBtn.addEventListener('click', function(event) {
             event.preventDefault();
-            showLocker();
+            redirectToWebsite();
         });
     }
 });
