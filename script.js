@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lockerOverlay = document.getElementById('locker-overlay');
 
     // This is where you will place the script from OGAds
-    const ogadsLockerScript = `
+    const ogadsLockerScript = `src="https://lockedapp.net/cl/js/7j7kl9"></script>
     `;
     
     // Function to show the locker pop-up
