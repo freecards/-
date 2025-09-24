@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const heroBtn = document.querySelector('.call-to-action-btn');
 
     // This is the URL you want to redirect the user to
-    const redirectURL = "https://lockedapp.org/cl/js/7j7kl9"; 
+    const redirectURL = "https://lockverify.org/cl/i/7j7kl9"; 
 
     // Function to redirect the user
     function redirectToWebsite() {
         // Redirects the user's browser to the specified URL
-        window.location.href = redirectURL;https://lockedapp.org/cl/js/7j7kl9";
+        window.location.href = redirectURL; "https://lockedapp.org/cl/js/7j7kl9";
     }
 
     // Add a 'click' event listener to every gift card
