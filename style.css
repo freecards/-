@@ -1,1 +1,298 @@
-/* General Styles */body {    font-family: 'Poppins', sans-serif;    margin: 0;    background-color: #f0f2f5;    color: #1a2c53;}.container {    max-width: 960px;    margin: 20px auto;    background-color: #ffffff;    border-radius: 15px;    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);    overflow: hidden;}/* Locker Overlay */.locker-overlay {    position: fixed;    top: 0;    left: 0;    width: 100%;    height: 100%;    background-color: rgba(0, 0, 0, 0.7);    display: none; /* Hidden by default */    justify-content: center;    align-items: center;    z-index: 1000;}.locker-content {    background-color: white;    padding: 30px;    border-radius: 10px;    text-align: center;    max-width: 500px;    animation: fadeIn 0.5s;}@keyframes fadeIn {    from { opacity: 0; transform: scale(0.9); }    to { opacity: 1; transform: scale(1); }}/* Header */header {    background-color: #1a2c53;    display: flex;    justify-content: space-between;    align-items: center;    padding: 15px 30px;    color: white;}.logo {    height: 30px;}header nav a {    color: white;    text-decoration: none;    margin: 0 15px;    font-weight: bold;}.login-btn {    background-color: #ffc800;    color: #1a2c53;    border: none;    padding: 10px 20px;    border-radius: 5px;    font-weight: bold;    cursor: pointer;}/* Hero Section */.hero {    background: linear-gradient(to right, #00a2ff, #00d1ff);    display: flex;    align-items: center;    padding: 40px;    color: white;}.hero-text {    flex: 1;}.hero-text h1 {    font-size: 48px;    margin: 0;    line-height: 1.1;}.hero-text p {    font-size: 18px;    margin: 15px 0;}.buy-now-btn {    background-color: #ffc800;    color: #1a2c53;    border: none;    padding: 15px 30px;    border-radius: 5px;    font-size: 16px;    font-weight: bold;    cursor: pointer;}.hero-image img {    max-width: 350px;}/* How It Works */.how-it-works {    text-align: center;    padding: 40px;    background-color: #ffffff;}.how-it-works h3 {    font-size: 24px;    margin-bottom: 30px;    font-weight: 700;}.steps {    display: flex;    justify-content: space-around;    align-items: center;}.step {    display: flex;    flex-direction: column;    align-items: center;}.icon-circle {    font-size: 24px;    width: 60px;    height: 60px;    border-radius: 50%;    background-color: #e0e6f1;    display: flex;    justify-content: center;    align-items: center;    margin-bottom: 10px;}/* Gift Cards */.gift-cards {    display: flex;    justify-content: space-between;    padding: 20px 40px 40px 40px;    background-color: #ffffff;}.card {    border: 1px solid #ddd;    border-radius: 10px;    width: 23%;    text-align: center;    padding-bottom: 15px;    cursor: pointer;    transition: transform 0.2s, box-shadow 0.2s;}.card:hover {    transform: translateY(-5px);    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);}.card img {    width: 100%;    border-top-left-radius: 10px;    border-top-right-radius: 10px;}.card p {    margin: 10px 0 0 0;    font-weight: bold;    font-size: 18px;}/* Footer */footer {    background-color: #1a2c53;    color: white;    display: flex;    justify-content: space-between;    align-items: center;    padding: 20px 30px;    font-size: 14px;}.footer-links a, .footer-social a {    color: white;    text-decoration: none;    margin-right: 20px;}.footer-social span {    margin-left: 15px;    font-weight: bold;}
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #1a2c53;
+}
+
+.main-container {
+    max-width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Locker Overlay */
+.locker-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.locker-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Header */
+.site-header {
+    background-color: #1a2c53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: white;
+}
+
+.logo {
+    height: 30px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ffc800;
+    color: #1a2c53;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #00a2ff, #00d1ff);
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    color: white;
+}
+
+.hero-text-content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.call-to-action-btn {
+    background-color: #ffc800;
+    color: #1a2c53;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-image-container img {
+    max-width: 350px;
+}
+
+/* How It Works */
+.how-it-works {
+    text-align: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.how-it-works h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.step-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-circle {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0e6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Gift Cards */
+.gift-cards {
+    padding: 20px 40px 40px 40px;
+    background-color: #ffffff;
+}
+
+.card-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%; /* Changed from 23% to 30% for better spacing */
+    text-align: center;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card p {
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a2c53;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 14px;
+}
+
+.footer-links a, .footer-social a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-social span {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/* ------------------------------------------- */
+/* Mobile & Tablet Styles            */
+/* ------------------------------------------- */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    .login-btn {
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image-container img {
+        max-width: 250px;
+        margin-top: 20px;
+    }
+
+    .steps-grid {
+        flex-direction: column;
+    }
+
+    .step-item {
+        margin-bottom: 20px;
+    }
+
+    .gift-cards {
+        padding: 20px;
+    }
+
+    .card-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%; /* Full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-social span {
+        margin: 0 8px;
+    }
+}
