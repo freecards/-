@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lockerOverlay = document.getElementById('locker-overlay');
 
     // This is where you will place the script from OGAds
+    // Make sure to paste your exact code here between the backticks ``
     const ogadsLockerScript = `
         <script type="text/javascript" id="ogjs" src="https://lockedapp.org/cl/js/7j7kl9"></script>
     `;
@@ -44,4 +45,13 @@ document.addEventListener('DOMContentLoaded', function() {
             showLocker();
         });
     });
+
+    // Event listener for the "GET YOURS NOW" button in the hero section
+    const heroBtn = document.querySelector('.call-to-action-btn');
+    if (heroBtn) {
+        heroBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            showLocker();
+        });
+    }
 });
